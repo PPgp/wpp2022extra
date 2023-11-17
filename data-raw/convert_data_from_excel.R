@@ -45,7 +45,7 @@ cbr <- data.table(allind[, startsWith(colnames(allind), "Crude Birth Rate") |
                              colnames(allind) %in% c("country_code", "name", "Year")])
 setnames(cbr, "Year", "year")
 setnames(cbr, ncol(cbr), "cbr")
-
+cbr[, cbr := as.numeric(cbr)][is.na(cbr), cbr := 0] # applies to Holy See  
 # CBR projections
 cbrproj <- process.proj.indicator("UN_PPP2022_Output_CBR.xlsx", 
                                   list(cbr = "Median", cbr_80l="Lower 80", cbr_80u="Upper 80", 
@@ -64,7 +64,7 @@ cdrest <- data.table(allind[, startsWith(colnames(allind), "Crude Death Rate") |
                              colnames(allind) %in% c("country_code", "name", "Year")])
 setnames(cdrest, "Year", "year")
 setnames(cdrest, ncol(cdrest), "cdr")
-
+cdrest[, cdr := as.numeric(cdr)][is.na(cdr), cdr := 0] # applies to Holy See 
 # CDR projections
 cdrproj <-  process.proj.indicator("UN_PPP2022_Output_CDR.xlsx",
                                    list(cdr = "Median", cdr_80l="Lower 80", cdr_80u="Upper 80", 
@@ -82,6 +82,7 @@ est <- data.table(allind[, startsWith(colnames(allind), "Births (thousands)") |
                                 colnames(allind) %in% c("country_code", "name", "Year")])
 setnames(est, "Year", "year")
 setnames(est, ncol(est), "births")
+est[, births := as.numeric(births)][is.na(births), births := 0] # applies to Holy See  
 proj <-  process.proj.indicator("UN_PPP2022_Output_Births.xlsx", 
                                 list(births = "Median", births_80l="Lower 80", births_80u="Upper 80", 
                                     births_95l="Lower 95", births_95u="Upper 95"))
@@ -98,6 +99,7 @@ est <- data.table(allind[, startsWith(colnames(allind), "Total Deaths") |
                              colnames(allind) %in% c("country_code", "name", "Year")])
 setnames(est, "Year", "year")
 setnames(est, ncol(est), "deaths")
+est[, deaths := as.numeric(deaths)][is.na(deaths), deaths := 0] # applies to Holy See  
 proj <-  process.proj.indicator("UN_PPP2022_Output_Deaths.xlsx", 
                                 list(deaths = "Median", deaths_80l="Lower 80", deaths_80u="Upper 80", 
                                      deaths_95l="Lower 95", deaths_95u="Upper 95"))
