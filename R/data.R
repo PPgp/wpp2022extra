@@ -112,3 +112,18 @@
 #' @rdname cdr
 "cdrproj1dt"
 
+#' United Nations Table of Locations
+#' 
+#' United Nations table of locations (countries, regions) as available in 2022, 
+#' including the UN code, name and the order in which they usually 
+#' appear in UN datasets.
+#' 
+#' @format Data table with variables:
+#' \describe{
+#'      \item{country_code}{int Numerical Location Code (3-digit codes following ISO 3166-1 numeric standard)} 
+#'      \item{name}{chr Name of country or region}
+#'      \item{country_order}{int Order of the location in which it usually appears in UN datasets}
+#' }
+#' @source Data provided by the United Nations Population Division.
+#' @rdname countries
+"countries"

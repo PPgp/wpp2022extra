@@ -1,6 +1,6 @@
 Package: wpp2022extra
-Version: 0.0-2
-Date: 2023-11-17
+Version: 0.0-2.9001
+Date: 2023-11-20
 Title: Additional Datasets from the World Population Prospects 2022
 Author: United Nations Population Division
 Maintainer: Hana Sevcikova <hanas@uw.edu>
@@ -12,3 +12,4 @@ URL: http://population.un.org/wpp
 NeedsCompilation: no
 LazyData: no
 RoxygenNote: 7.2.1
+Encoding: UTF-8
