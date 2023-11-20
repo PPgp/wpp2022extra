@@ -1,7 +1,6 @@
 # wpp2022extra
 
-The wpp2022extra R package provides additional datasets from the United Nations World Population Prospects, the [WPP 2022](h
-ttps://population.un.org/wpp) that are not included in the [**wpp2022**](https://github.com/PPgp/wpp2022) R package.
+The wpp2022extra R package provides additional datasets from the United Nations World Population Prospects, the [WPP 2022](https://population.un.org/wpp) that are not included in the [**wpp2022**](https://github.com/PPgp/wpp2022) R package.
 
 #### Data copyright
 
