@@ -14,7 +14,6 @@ Data table in long format with variables:
   \item{cdr}{dbl CDR counts in thousands}
   \item{cdr_80l, cdr_95l}{dbl Lower bounds of the 80 and 95 percent probability intervals}
   \item{cdr_80u, cdr_95u}{dbl Upper bounds of the 80 and 95 percent probability intervals}
-  
 }
 
 An object of class \code{data.table} (inherits from \code{data.frame}) with 22515 rows and 8 columns.
