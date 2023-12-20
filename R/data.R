@@ -114,7 +114,7 @@
 #' Projection of Population Counts by Broader Age Groups 
 #'
 #' Annual time series of projected population counts by broader age groups
-#' for all countries, including probability intervals, as available in 2022.
+#' for all countries, including probability intervals, as available in 2022. These are considered as mid-year counts.
 #' 
 #' @format Data table in long format with variables:
 #' \describe{
